@@ -13,6 +13,6 @@ document.getElementById("date").innerHTML = now.toDateString();
 document.getElementById("time").innerHTML = time;
 document.getElementById('points').style.visibility=(_i=!_i)?'visible':'hidden';
 
-setTimeout(clock, 1000);
+setTimeout(clock, 500);
 }
 clock();

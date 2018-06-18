@@ -20,10 +20,37 @@ class DefaultController extends Controller
     /**
      * Page des horaires de prières
      */
-    public function horairePriere()
+    public function contact()
     {
 
-        $this->show('default/horairePriere');
+        $this->show('default/contact');
+    }
+
+    /**
+     * Page Notre Histoire
+     */
+    public function history()
+    {
+
+        $this->show('default/history');
+    }
+
+    /**
+     * Page des Actions
+     */
+    public function action()
+    {
+
+        $this->show('default/action');
+    }
+
+    /**
+     * Page des Projets
+     */
+    public function project()
+    {
+
+        $this->show('default/project');
     }
 
 }
