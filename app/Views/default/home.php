@@ -1,6 +1,14 @@
-<?php $this->layout('layout', ['title' => 'home']) ?>
+<?php $this->layout('layout', ['title' => 'Home']) ?>
 <?php $this->start('main_content') ?>
-    <body>
+<div class="top front">
+    <h1>ASSOCIATION AMAL</h1>
+</div>
+<div class="bottom front">
+    <h1><b>VOUS SOUHAITE LA BIENVENUE </b></h1>
+</div>
+<div class="lockBack front"></div>
+<div class="lock front"></div>
+<div class="main">
     <div id="wrapperMain">
         <div id="center">
             <div id="header">
@@ -9,30 +17,20 @@
                 <p id="time">TIME</p>
                 <p id="date">DATE</p>
             </div>
-            <div id="content">
-                <div id="searchBar">
-                    <form method="get" action="https://www.google.com/search" target="_blank">
-                        <input type="text" placeholder="Google" name="q" id="search">
-                        <input type="submit" value="Go" name="" id="button">
-                    </form>
-                </div>
-                <div id="links">
-                    <hr>
-                    <nav>
-                        <ul>
-                            <li><a href="#" target="_blank">LINK1</a></li>
-                            <li><a href="#" target="_blank">LINK2</a></li>
-                            <li><a href="#" target="_blank">LINK3</a></li>
-                            <li><a href="#" target="_blank">LINK4</a></li>
-                            <li><a href="#" target="_blank">LINK5</a></li>
-                            <li><a href="#" target="_blank">LINK6</a></li>
-                        </ul>
-                    </nav>
-                </div>
+            <div id="displaytd">
+                <nav>
+                    <ul class="nav">
+                        <li class="nav-item">
+                            <a class="nav-link active" href="#">Active</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="#">Longer nav link</a>
+                        </li>
+                    </ul>
+                </nav>
             </div>
-            <div id="footer">
-            </div>
+
         </div>
     </div>
-    </body>
+</div>
 <?php $this->stop('main_content'); ?>

@@ -17,4 +17,13 @@ class DefaultController extends Controller
         $this->show('default/home');
     }
 
+    /**
+     * Page des horaires de prières
+     */
+    public function horairePriere()
+    {
+
+        $this->show('default/horairePriere');
+    }
+
 }

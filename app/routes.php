@@ -2,6 +2,7 @@
 
 	$w_routes = array(
 
-        ['GET', '/home', 'default#home', 'default_home'],
+        ['GET', '/', 'default#home', 'default_home'],
+        ['GET', '/horairePriere', 'default#horairePriere', 'default_horairePriere'],
 
 	);
