@@ -31,5 +31,6 @@
 
     <?= $this->section('javascript') ?>
     <script src="<?= $this->assetUrl('js/home.js') ?>" charset="utf-8"></script>
+    <script src="<?= $this->assetUrl('js/horaire.js') ?>" charset="utf-8"></script>
 </body>
 </html>
