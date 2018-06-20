@@ -1,36 +1,92 @@
 <!DOCTYPE html>
 <html lang="fr">
 <head>
-	<meta charset="UTF-8">
-	<title><?= $this->e($title) ?></title>
-	<meta name="viewport" content="width=device-width, initial-scale=1"/>
-
-	<!-- CSS FILES  -->
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/home.css') ?>">
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/navbar.css') ?>">
-    <link rel="stylesheet" href="<?= $this->assetUrl('css/horaire.css') ?>">
-	<link rel="stylesheet" href="<?= $this->assetUrl('bootstrap/css/bootstrap.min.css') ?>">
-	<link rel="stylesheet" href="<?= $this->assetUrl('bootstrap/css/bootstrap.css') ?>">
-	<link rel="stylesheet" href="<?= $this->assetUrl('bootstrap/css/bootstrap.css.map') ?>">
-
+    <meta charset="UTF-8">
+    <title><?= $this->e($title) ?></title>
+    <meta name="viewport" content="width=device-width, initial-scale=1"/>
 
     <!-- Custom fonts for this template -->
-    <link href="https://fonts.googleapis.com/css?family=Raleway:100,100i,200,200i,300,300i,400,400i,500,500i,600,600i,700,700i,800,800i,900,900i" rel="stylesheet">
-    <link href="https://fonts.googleapis.com/css?family=Lora:400,400i,700,700i" rel="stylesheet">
-	<link href="https://fonts.googleapis.com/css?family=Playfair+Display" rel="stylesheet">
-	<!-- FAVICON -->
-	<link rel="icon" type="img/png" href="<?= $this->assetUrl('img/test.jpg') ?>" />
+    <link href='https://fonts.googleapis.com/css?family=Open+Sans:400,300,600,700,800' rel='stylesheet' type='text/css'>
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+    <!-- CSS FILES  -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+    <link rel='stylesheet prefetch' href='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css'>
+    <link rel="stylesheet" href="<?= $this->assetUrl('css/home.css') ?>">
+
+    <!-- FAVICON -->
+    <link rel="icon" type="img/png" href="<?= $this->assetUrl('img/favicn.ico') ?>" />
 
 </head>
-<body class="home">
-    <section>
-        <?= $this->section('main_content') ?>
-    </section>
-    <?= $this->section('script') ?>
-    <script src="<?= $this->assetUrl('jquery/jquery.js') ?>" charset="utf-8"></script>
+<body>
+<section>
 
-    <?= $this->section('javascript') ?>
-    <script src="<?= $this->assetUrl('js/home.js') ?>" charset="utf-8"></script>
-    <script src="<?= $this->assetUrl('js/horaire.js') ?>" charset="utf-8"></script>
+    <!-- Navigation - Fixed Top -->
+    <nav class="navbar-fixed-top" style="background-color: #374549d4;">
+        <div class="container-fluid">
+            <!-- Brand and toggle get grouped for better mobile display -->
+            <div class="navbar-header">
+                    <a class="navbar-home" href="#home" role="button">
+                        <svg class="lnr lnr-home"><use xlink:href="#lnr-home"></use></svg>
+                    </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#scroll-spy" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="material-icons">&#xE5D2;</i>
+                    </button>
+                    <a class="navbar-home" href="#home" role="button">
+                        <svg class="lnr lnr-home"><use xlink:href="#lnr-home"></use></svg>
+                    </a>
+                    <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#scroll-spy" aria-expanded="false">
+                        <span class="sr-only">Toggle navigation</span>
+                        <i class="material-icons">&#xE5D2;</i>
+                    </button>
+            </div>
+
+            <!-- Collect the nav links, forms for toggling -->
+            <div class="collapse navbar-collapse" id="scroll-spy">
+
+                <!-- navbar-nav -->
+                <ul class="nav navbar-nav ">
+                    <li><a href="<?php echo $this->url('default_home')?>">Accueil</a></li>
+                    <li><a href="<?php echo $this->url('default_nous')?>">Qui sommes-nous</a></li>
+                    <li><a href="<?php echo $this->url('default_action')?>">Nos actions</a></li>
+                    <li><a href="<?php echo $this->url('default_dons')?>">Faire un don</a></li>
+                    <li><a href="<?php echo $this->url('default_contact')?>">Contact</a></li>
+                    <li><a href="<?php echo $this->url('security_register')?>">S'Inscrire</a></li>
+                    <li><a href="<?php echo $this->url('security_login')?>">Se connecter</a></li>
+                </ul><!-- /.navbar-nav -->
+            </div><!-- /.navbar-collapse -->
+        </div><!-- /.container-fluid -->
+    </nav><!-- /.fixed navigation -->
+    <?= $this->section('main_content') ?>
+    <footer>
+        <div class="container col-xs-12">
+            <div class="row">
+                <div class="col-xs-4">
+                    <h4>AMAL </h4>
+                    <p style="text-align:center">Être humanitairement engagé,<br> plus qu’une devise,<br> un vrai état d’esprit</p>
+                </div>
+                <div class="col-xs-4">
+                    <h4>CONTACT </h4>
+                    <p style="text-align:center">AMAL Association <br> 26 rue jeanne d'arc <br> 59650 Villeneuve D'ascq <br> France <br> 06...... <br> amalasso.fr</p>
+                </div>
+                <div class="col-xs-4">
+                    <h4>FAIRE UN DON </h4>
+                    <p style="text-align:center">Aidons les tous ensemble.</p>
+                    <button class="btn-info" href="<?php echo $this->url('default_dons')?>">BISMILLAH</button>
+                </div>
+            </div>
+        </div>
+    </footer>
+    <a href="#home" role="button" class="scrollTop">
+        <svg class="lnr lnr-chevron-up"><use xlink:href="#lnr-chevron-up"></use></svg>
+    </a>
+</section>
+
+<?= $this->section('javascript') ?>
+<script src="https://cdn.linearicons.com/free/1.0.0/svgembedder.min.js"></script>
+<script src='https://code.jquery.com/jquery-2.2.4.min.js'></script>
+<script src='https://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js'></script>
+<script src="<?= $this->assetUrl('js/home.js') ?>" charset="utf-8"></script>
 </body>
 </html>
