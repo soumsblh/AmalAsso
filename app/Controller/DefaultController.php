@@ -27,12 +27,12 @@ class DefaultController extends Controller
     }
 
     /**
-     * Page Notre Histoire
+     * Page Qui sommes-nous
      */
-    public function history()
+    public function nous()
     {
 
-        $this->show('default/history');
+        $this->show('default/nous');
     }
 
     /**
@@ -51,6 +51,15 @@ class DefaultController extends Controller
     {
 
         $this->show('default/project');
+    }
+
+    /**
+     * Page des dons
+     */
+    public function dons()
+    {
+
+        $this->show('default/dons');
     }
 
 }
