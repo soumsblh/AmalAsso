@@ -8,6 +8,7 @@
 
 namespace Controller;
 
+use Model\UserModel;
 use \W\Controller\Controller;
 
 class SecurityController extends Controller
@@ -18,8 +19,7 @@ class SecurityController extends Controller
      */
     public function forget()
     {
-
-        $this->show('security/forget');
+            $this->show('security/forget');
     }
 
     /**

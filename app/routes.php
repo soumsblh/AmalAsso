@@ -11,7 +11,7 @@
         ['GET', '/project', 'default#project', 'default_project'],
 
         #Routes Security Controller
-        ['GET|POST', '/forget', 'security#foret', 'security_home'],
+        ['GET|POST', '/forget', 'security#forget', 'security_home'],
         ['GET|POST', '/login', 'security#login', 'security_login'],
         ['GET|POST', '/register', 'security#register', 'security_register'],
 
